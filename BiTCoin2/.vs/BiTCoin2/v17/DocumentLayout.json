@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F527206C-67E1-49A1-9B49-D55427C7A417}|BiTCoin2\\BiTCoin2.csproj|c:\\users\\test1\\source\\repos\\bitcoin2\\bitcoin2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F527206C-67E1-49A1-9B49-D55427C7A417}|BiTCoin2\\BiTCoin2.csproj|solutionrelative:bitcoin2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F527206C-67E1-49A1-9B49-D55427C7A417}|BiTCoin2\\BiTCoin2.csproj|c:\\users\\test1\\source\\repos\\bitcoin2\\bitcoin2\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F527206C-67E1-49A1-9B49-D55427C7A417}|BiTCoin2\\BiTCoin2.csproj|solutionrelative:bitcoin2\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F527206C-67E1-49A1-9B49-D55427C7A417}|BiTCoin2\\BiTCoin2.csproj|c:\\users\\test1\\source\\repos\\bitcoin2\\bitcoin2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F527206C-67E1-49A1-9B49-D55427C7A417}|BiTCoin2\\BiTCoin2.csproj|solutionrelative:bitcoin2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\BiTCoin2\\Program.cs",
+              "RelativeDocumentMoniker": "BiTCoin2\\Program.cs",
+              "ToolTip": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\BiTCoin2\\Program.cs",
+              "RelativeToolTip": "BiTCoin2\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:15:11.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\BiTCoin2\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "BiTCoin2\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\BiTCoin2\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "BiTCoin2\\Views\\Login\\Login.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T14:31:19.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\BiTCoin2\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "BiTCoin2\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\test1\\source\\repos\\BiTCoin2\\BiTCoin2\\Controllers\\LoginController.cs*",
+              "RelativeToolTip": "BiTCoin2\\Controllers\\LoginController.cs*",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAiwHwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:57:12.88Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

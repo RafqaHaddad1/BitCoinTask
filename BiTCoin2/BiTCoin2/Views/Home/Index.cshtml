@@ -1,0 +1,125 @@
+﻿@model List<BiTCoin2.NewFolder.BCT12>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Crypto Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    </head>
+    <body>
+        <h1>Crypto Prices</h1>
+
+        @if (Model == null || !Model.Any())
+        {
+            <p>Model is null or empty</p>
+        }
+        else
+        {
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body table-responsive p-0">
+                        <table id="cryptoTable" class="table table-head-fixed text-nowrap sortable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>LastPrices</th>
+                                    <th>SourceID</th>
+                                    <th>Timestamp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.id</td>
+                                        <td>
+                                            @item.LastPrices
+                                        </td>
+                                        <td>@item.SourceID</td>
+                                        <td>@item.timestamp</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+        <script>
+            $(document).ready(function () {
+                function fetchBtcData() {
+                    $.ajax({
+                        url: '/BTC',
+
+                        type: 'GET',
+                        success: function (data) {
+                            var tableBody = $('#cryptoTable tbody');
+                            tableBody.empty();
+                            // Append the row to the table body
+                            tableBody.append(`
+                                                 <tr>
+                                                    <td>${data.id}</td>
+                                                    <td>${data.LastPrice}</td>
+                                                    <td>${data.SourceID}</td>
+                                                    <td>${data.timestamp}</td>
+                                                </tr>
+                                            `);
+                        },
+                        error: function (error) {
+                            console.log('Error fetching BTC data:', error);
+                        }
+                    });
+                }
+                fetchBtcData();
+                setInterval(fetchBtcData, 60000);
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                function fetchBtcData() {
+                    $.ajax({
+                        url: '/BTC2',
+                        type: 'GET',
+                        success: function (data) {
+                            var tableBody = $('#cryptoTable tbody');
+                            tableBody.empty();
+                            // Append the row to the table body
+                            tableBody.append(`
+                                                         <tr>
+                                                            <td>${data.id}</td>
+                                                            <td>${data.LastPrice}</td>
+                                                            <td>${data.SourceID}</td>
+                                                            <td>${data.timestamp}</td>
+                                                        </tr>
+                                                    `);
+                        },
+                        error: function (error) {
+                            console.log('Error fetching BTC data:', error);
+                        }
+                    });
+                }
+                fetchBtcData();
+                setInterval(fetchBtcData, 60000);
+            });
+        </script>
+        <script type="text/javascript">
+            var js = jQuery.noConflict(true);
+            js(document).ready(function () {
+                js('#cryptoTable').DataTable({
+                });
+            });
+        </script>
+
+
+    </body>
+
+    </html>
+
+
+
